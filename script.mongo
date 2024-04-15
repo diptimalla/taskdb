@@ -1,0 +1,86 @@
+db.tasks.insertOne({
+    "task":"to do work ",
+    "taskno":"1",
+    "taskurgency":"not urgent",
+    "taskcreatedby":"dip"
+
+
+})
+
+
+db.task.insertMany([
+    {
+    "task":"to do work ",
+    "taskno":"2",
+    "taskurgency":"not so urgent",
+    "taskcreatedby":"dirp"
+
+    },
+    {
+    "task":"to do work ",
+    "taskno":"3",
+    "taskurgency":"not urgent",
+    "taskcreatedby":"didp"
+
+    },
+    {
+    "task":"to do work ",
+    "taskno":"4",
+    "taskurgency":"not urgent",
+    "taskcreatedby":"difp"
+
+    },
+    {
+    "task":"to do work ",
+    "taskno":"5",
+    "taskurgency":"not urgent",
+    "taskcreatedby":"diffp"
+    }
+
+])
+
+db.task.find()
+
+db.task.updateOne({
+    "_id":ObjectId("661bf311c54ab802c27eb0dc")
+},{
+     $set:{
+    "task":"to do work ",
+    "taskno":"6",
+    "taskurgency":"not urgent",
+    "taskcreatedby":"diffp" 
+        }
+    },
+    {upsert:true}
+
+)
+db.tasks.insertMany([
+    {
+    "task":"to do work ",
+    "taskno":"2",
+    "taskurgency":"not so urgent",
+    "taskcreatedby":"dirp"
+
+    },
+    {
+    "task":"to do work ",
+    "taskno":"3",
+    "taskurgency":"not urgent",
+    "taskcreatedby":"didp"
+
+    },
+    {
+    "task":"to do work ",
+    "taskno":"4",
+    "taskurgency":"not urgent",
+    "taskcreatedby":"difp"
+
+    },
+    {
+    "task":"to do work ",
+    "taskno":"5",
+    "taskurgency":"not urgent",
+    "taskcreatedby":"diffp"
+    }
+
+])
